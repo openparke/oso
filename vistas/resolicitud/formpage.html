@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>notificar</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="form.css" >
+        <script src="form.js"></script>
+    </head>
+    <body >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2>solicitud</h2> pruebas </p>
+                    <form role="form" method="post" id="reused_form" enctype=&quot;multipart/form-data&quot; >
+                        <div class="form-group">
+                            <label for="nombre"> Numero de Matricula:</label>
+                            <input type="text" class="form-control" id="nombre" name="Matricula" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo"> Cedula Propietario:</label>
+                            <input type="cedula" class="form-control" id="cedula" name="cedula propietario" required maxlength="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="name"> Estado Civil:</label>
+                            <textarea class="form-control" type="textarea" name="Estado Civil" id="estadoc" placeholder="prueba" maxlength="6000" rows="7"></textarea>
+                        </div>
+                          <div class="form-group">
+                            <label for="nombre"> Primer Nombre:</label>
+                            <input type="text" class="form-control" id="nombrep" name="Primer Nombre" required maxlength="10">
+                        </div>
+                         <div class="form-group">
+                            <label for="nombre"> Segundo Nombre:</label>
+                            <input type="text" class="form-control" id="segundon" name="Segundo Nombre" required maxlength="10">
+                        </div>
+                         <div class="form-group">
+                            <label for="nombre"> Primer Apellido:</label>
+                            <input type="text" class="form-control" id="segundon" name="Primer Apellido" required maxlength="10">
+                        </div>
+                         <div class="form-group">
+                            <label for="nombre"> Segundo Apellido:</label>
+                            <input type="text" class="form-control" id="segundon" name="Segundo Apellido" required maxlength="10">
+                        </div>
+                         <div class="form-group">
+                            <label for="nombre"> Tipo de Documento:</label>
+                            <input type="text" class="form-control" id="segundon" name="Tipo Documento" required maxlength="10">
+                        </div>
+                         <div class="form-group">
+                            <label for="nombre"> Cedula Locatario:</label>
+                            <input type="text" class="form-control" id="segundon" name="Cedula Locatario" required maxlength="10">
+                        </div>
+                      
+                        <div class="form-group">
+                            <label for="name"> Documento Adjunto Certificado</label>
+                            <input type="file" class="form-control" id="documentoinformador" name="documentoinformador" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="nombre"> Fecha:</label>
+                            <input type="text" class="form-control" id="segundon" name="Fecha" required maxlength="10">
+                        </div>
+                         <div class="form-group">
+                            <label for="nombre"> Sucursal:</label>
+                            <input type="text" class="form-control" id="segundon" name="Sucursal" required maxlength="10">
+                        </div>
+                         <div class="form-group">
+                            <label for="nombre"> Informador:</label>
+                            <input type="text" class="form-control" id="segundon" name="Informador" required maxlength="10">
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-success pull-right" id="btnContactUs">enviar</button>
+                    </form>
+                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>enviado correctamente</h3> </div>
+                    <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> error. </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
